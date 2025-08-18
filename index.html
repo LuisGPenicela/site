@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang='pt-br'> 
 <head> 
-<title>Portfolio 1</title>
+<title>Portfolio </title>
 <meta charset='utf-8' />
-<link rel='stylesheet' type='text/css' href='style.css' />
+<link rel='stylesheet' type='text/css' href='css/style.css' />
 <link rel="stylesheet" href="inst/dist/instagram.min.css">
   <link rel="stylesheet" href="inst/dist/instagram.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -426,6 +426,30 @@ gsap.to("#skill_list", {
 });
 
 
+
+
+gsap.set("#resp_texto", { scale: 0.5, opacity: 0, filter: "blur(6px)" });
+
+gsap.to("#resp_texto", {
+  scrollTrigger: {
+    trigger: "#resp_texto",
+    start: "top 80%",
+    end: "top 50%",
+    scrub: 3,
+  },
+  scale: 1,
+  opacity: 1,
+  filter: "blur(0px)",
+  ease: "power2.out",
+   
+});
+
+
+
+
+
+
+
       gsap.to("#rotate", {
         scrollTrigger: {
           trigger: "#rotate",
@@ -450,5 +474,4 @@ gsap.to("#skill_list", {
 
 
 </body>
-
 </html>
