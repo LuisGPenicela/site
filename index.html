@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang='pt-br'> 
 <head> 
-<title>Portfolio </title>
+<title>Luis Guilherme </title>
 <meta charset='utf-8' />
-<link rel='icon'  href='logo.png' />
+<link rel='icon'  href='lr.png' />
 <link rel='stylesheet' type='text/css' href='style.css' />
 <link rel="stylesheet" href="inst/dist/instagram.min.css">
   <link rel="stylesheet" href="inst/dist/instagram.css">
@@ -15,24 +15,24 @@
 <body>
 <div id='tudo'>  
 <div id='menu'> 
-<img src='logo.png' id='logo'>
+<img src='lr.png' id='logo'>
 
 
 
 <a href='#part2'>
   <button id='m_item'> 
 
-<img src='logo.png' id='logo'>
+<img src='lr.png' id='logo'>
 
-Sobre</button></a><a href='#servicos'><button id='m_item'>Serviços</button></a><a href='port.pdf' target='_blank'><button id='m_item_p' >Portfólio</button></a><a href='#contacto'><button id='m_item_c'>Contacto</button></a></div>
+Sobre</button></a><a href='#servicos'><button id='m_item'>Serviços</button></a><a href='port.pdf' target='_blank'><button id='m_item_p' >Portfólio</button></a><a href='#contacto'><button id='m_item_c'><img src='call.png' id='call'> </button></a></div>
 
-<button id='exp'><b style='color:#ffffff'>6+</b><br/><br/> A<br/>n<br/>o<br/>s <br/><br/>E<br/>x<br/>p.</button>
+<button id='exp'><b style='color:#ffffff'>6+</b><br/><br/> A<br/>N<br/>O<br/>S <br/><br/>D<br/>E<br/><br/>E<br/>X<br/>P<br/>E<br/>R<br/> &nbsp;I<br/>Ê<br/>N<br/>C<br/> &nbsp;I<br/>A</button>
 
 
-<button id='web' class="light-sweep"><b style='font-size:30px;color:#ffffff'>we follow</b><b>Web</b><br/><b>Design</b><b style='font-size:30px;color:#ffffff'>Trends</b></button>
-<img src='woman.png' id='bird'/> 
+<button id='web' class="light-sweep"><b style='font-size:30px;color:#ffffff'>DESIGN GRÁFICO</b><b>Web</b><br/><b>Design</b><b style='font-size:30px;color:#ffffff'>UIDESIGN</b></button>
+<img src='mark.png' class='filter-clarendon' id='bird' /> 
 <a href="https://wa.me/258848134516" target="_blank">
-  <button id='whats' class="light-sweep">Whatsapp Chat</button></a>
+  <button id='whats' class="light-sweep" onMouseOut="closePopup()" onMouseOver="openPopup()">Whatsapp Chat</button></a>
 <div id='intro'> 
 <b>Olá!</b><br/>
 Olá, bem vindo ao meu website. Eu chamo-me Luis Guilherme e trabalho com Web Design, Design Gráfico e UI Design... Espero podermos trabalhar juntos e criar um website que transmita claramente os valores da sua empresa.<br/>
@@ -81,7 +81,7 @@ Os websites que construo são sempre responsivos de modo a criar uma boa experi�
 
 
 <div id='skills_div'> 
-<h1 id='skills_h1' ><img src='logo.png' id='rotate'> SKILLS</h1>
+<h1 id='skills_h1' ><img src='fff.png' id='rotate'> SKILLS</h1>
 <div id='skill_list'> 
 <button id='b_skill'>HTML</button><br/>
 <button id='b_skill'>CSS</button><br/>
@@ -91,7 +91,7 @@ Os websites que construo são sempre responsivos de modo a criar uma boa experi�
 <button id='b_skill'>FIGMA</button>
 </div>
 </div>
-</div>
+
 
 
 
@@ -136,7 +136,7 @@ Os websites que construo são sempre responsivos de modo a criar uma boa experi�
 
 </div>
 <div style='height:200px;width:50px'></div>
-
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -212,21 +212,21 @@ ScrollTrigger.create({
   end: "bottom top",       // Quando a imagem inteira sai da tela
   onLeave: () => {
     gsap.to("#bird", {
-      filter: "grayscale(100%)",
+      
       duration: 0.5,
       ease: "power2.out"
     });
   },
   onEnterBack: () => {
     gsap.to("#bird", {
-      filter: "grayscale(0%)",
+      
       duration: 0.5,
       ease: "power2.out"
     });
   },
   onEnter: () => {
     gsap.to("#bird", {
-      filter: "grayscale(100%)",
+      
       duration: 0.5,
       ease: "power2.out"
     });
@@ -279,12 +279,12 @@ gsap.to("#intro", {
 
 ScrollTrigger.create({
   trigger: "#bird",
-  start: "top center",   // Quando a imagem cruza o centro da viewport
+  start: "top 20%",   // Quando a imagem cruza o centro da viewport
   end: "bottom center",
   onEnter: () => {
     // Rolando para baixo → aplicar preto e branco
     gsap.to("#bird", {
-      filter: "grayscale(100%)",
+      
       duration: 0.5,
       ease: "power2.out"
     });
@@ -292,7 +292,7 @@ ScrollTrigger.create({
   onLeaveBack: () => {
     // Rolando para cima → voltar à cor
     gsap.to("#bird", {
-      filter: "grayscale(0%)",
+      
       duration: 0.5,
       ease: "power2.out"
     });
@@ -300,7 +300,7 @@ ScrollTrigger.create({
   onLeave: () => {
     // Fora da área abaixo — manter p&b
     gsap.to("#bird", {
-      filter: "grayscale(100%)",
+      
       duration: 0.5,
       ease: "power2.out"
     });
@@ -308,7 +308,7 @@ ScrollTrigger.create({
   onEnterBack: () => {
     // Voltando para cima — ficar colorido
     gsap.to("#bird", {
-      filter: "grayscale(0%)",
+      
       duration: 0.5,
       ease: "power2.out"
     });
@@ -346,14 +346,14 @@ gsap.to("#part2", {
 });
 
 // Efeito de entrada com fade + escala + blur para #servicos (mobile e desktop)
-gsap.set("#servicos", { scale: 0.8, opacity: 0, filter: "blur(6px)" });
+gsap.set("#servicos", { scale: 0.5, opacity: 0, filter: "blur(6px)" });
 
 gsap.to("#servicos", {
   scrollTrigger: {
     trigger: "#servicos",
     start: "top 85%",
     end: "top 50%",
-    scrub: 0.5,
+    scrub: 2,
   },
   scale: 1,
   opacity: 1,
